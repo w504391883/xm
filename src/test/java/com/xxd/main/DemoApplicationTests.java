@@ -1,4 +1,4 @@
-package com.xxd.demo;
+package com.xxd.main;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
