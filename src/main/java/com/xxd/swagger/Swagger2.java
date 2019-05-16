@@ -18,6 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * + @descriptionswagger2配置类
  * + @date 2019/3/7
  * + @E-mail 504391883@qq.com
+ * +访问地址 baseURL+swagger-ui.html
  */
 @Configuration
 @EnableSwagger2
