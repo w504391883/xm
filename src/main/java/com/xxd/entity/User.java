@@ -2,6 +2,8 @@ package com.xxd.entity;
 
 import org.springframework.stereotype.Component;
 
+import java.io.Serializable;
+
 /**
  * + @author Xuxiaodong
  * + @description用户实体类
@@ -9,20 +11,22 @@ import org.springframework.stereotype.Component;
  * + @E-mail 504391883@qq.com
  */
 @Component
-public class User {
-    private  int uid;
+public class User implements Serializable {
+    private  int id;
     private String username;
     private  String password;
     private String nickname;
-    private String phone;
-    private String headportrait;
-    private int state;
-    public int getUid() {
-        return uid;
+    private String avatar;
+    private long createtime ;
+    private long updatetime;
+    private int delflag;
+
+    public int getId() {
+        return id;
     }
 
-    public void setUid(int uid) {
-        this.uid = uid;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUsername() {
@@ -49,41 +53,49 @@ public class User {
         this.nickname = nickname;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getAvatar() {
+        return avatar;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 
-    public String getHeadportrait() {
-        return headportrait;
+    public long getCreatetime() {
+        return createtime;
     }
 
-    public void setHeadportrait(String headportrait) {
-        this.headportrait = headportrait;
+    public void setCreatetime(long createtime) {
+        this.createtime = createtime;
     }
 
-    public int getState() {
-        return state;
+    public long getUpdatetime() {
+        return updatetime;
     }
 
-    public void setState(int state) {
-        this.state = state;
+    public void setUpdatetime(long updatetime) {
+        this.updatetime = updatetime;
     }
+
+    public int getDelflag() {
+        return delflag;
+    }
+
+    public void setDelflag(int delflag) {
+        this.delflag = delflag;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "uid=" + uid +
+                "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", nickname='" + nickname + '\'' +
-                ", phone='" + phone + '\'' +
-                ", headportrait='" + headportrait + '\'' +
-                ", state=" + state +
+                ", avatar='" + avatar + '\'' +
+                ", createtime=" + createtime +
+                ", updatetime=" + updatetime +
+                ", delflag=" + delflag +
                 '}';
     }
-
-
 }

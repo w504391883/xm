@@ -23,10 +23,10 @@ import java.util.List;
 @RequestMapping(value = "/api/user")
 public class UserController {
     @Autowired
-    private UserService UserService;
+    private UserService userService;
   @GetMapping("/allUser")
    public List<User> getAll()
    {
-       return  UserService.getAll();
+       return  userService.getAll();
    }
 }
