@@ -1,4 +1,4 @@
-package com.xxd.swagger;
+package com.xxd.config;
 
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;

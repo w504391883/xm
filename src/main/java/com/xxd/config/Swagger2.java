@@ -1,4 +1,4 @@
-package com.xxd.swagger;
+package com.xxd.config;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
