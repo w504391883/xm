@@ -1,7 +1,8 @@
-package com.xxd.service;
+package com.xxd.service.impl;
 
 import com.xxd.entity.User;
 import com.xxd.mapper.UserMapper;
+import com.xxd.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -16,7 +17,7 @@ import java.util.List;
  */
 @Component
 @Service
-public class UserService {
+public class UserServiceImpl implements UserService {
     @Autowired
     UserMapper userMapper;
     public List<User> getAll()

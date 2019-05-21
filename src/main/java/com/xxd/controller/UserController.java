@@ -1,13 +1,11 @@
 package com.xxd.controller;
 
 import com.xxd.entity.User;
-import com.xxd.service.UserService;
+import com.xxd.service.impl.UserServiceImpl;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -23,10 +21,10 @@ import java.util.List;
 @RequestMapping(value = "/api/user")
 public class UserController {
     @Autowired
-    private UserService userService;
+    private UserServiceImpl userServiceImpl;
   @GetMapping("/allUser")
    public List<User> getAll()
    {
-       return  userService.getAll();
+       return  userServiceImpl.getAll();
    }
 }
