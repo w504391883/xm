@@ -1,7 +1,9 @@
 package com.xxd.entity;
 
 import io.swagger.annotations.ApiModel;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
@@ -16,6 +18,8 @@ import java.io.Serializable;
 @ApiModel(value="user对象",description="用户对象user")
 @Component
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User implements Serializable {
     private  int id;
     private String username;

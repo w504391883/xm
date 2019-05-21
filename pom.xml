@@ -54,9 +54,9 @@
             <version>2.7.0</version>
         </dependency>
         <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.9.0</version>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.4.0</version>
         </dependency>
         <!-- lombok代码简化 -->
         <dependency>
