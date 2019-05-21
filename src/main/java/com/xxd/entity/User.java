@@ -1,5 +1,6 @@
 package com.xxd.entity;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,7 @@ import java.io.Serializable;
  * + @E-mail 504391883@qq.com
  */
 
+@ApiModel(value="user对象",description="用户对象user")
 @Component
 @Data
 public class User implements Serializable {

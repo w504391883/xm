@@ -3,6 +3,7 @@ package com.xxd.controller;
 import com.xxd.entity.User;
 import com.xxd.service.impl.UserServiceImpl;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,11 +19,12 @@ import java.util.List;
  */
 @Api(value = "有关用户的操作", description = "有关用户的操作")
 @RestController
-@RequestMapping(value = "/api/user")
+@RequestMapping(value = "/apis/user")
 public class UserController {
     @Autowired
     private UserServiceImpl userServiceImpl;
-  @GetMapping("/allUser")
+    @ApiOperation(value="获取全部用户信息",tags={"有关用户的操作"},notes="此接口为所有用户信息，仅仅为前期测试调用")
+  @GetMapping("/all")
    public List<User> getAll()
    {
        return  userServiceImpl.getAll();

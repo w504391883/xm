@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/authority-management.iml" filepath="$PROJECT_DIR$/authority-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xm.iml" filepath="$PROJECT_DIR$/xm.iml" />
     </modules>
   </component>
 </project>

@@ -6,16 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="authority-management" />
+        <module name="xm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="authority-management" target="1.8" />
+      <module name="xm" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="authority-management" options="-parameters" />
+      <module name="xm" options="-parameters" />
     </option>
   </component>
 </project>
