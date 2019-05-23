@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <!-- 配置日志的级别/路径，根据properties -->
+    <springProperty scope="context" name = "logLevel" source = "logback.log.level"/>
+    <springProperty scope="context" name = "logPath" source="logback.log.path" />
+
+    <!-- 文件大小切割 -->
+    <property name = "maxSize" value = "1GB"/>
+    <!-- 最大保存时间 -->
+    <property name="maxHistory" value="30"/>
+
+    <!-- 日志打印区域 -->
+    <!-- 控制台 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%-5level] [%logger{36}]  - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- INFO级别的文件打印 -->
+    <appender name="FILE_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${logPath}/root.%d{yyyy-MM-dd_HH}.%i</fileNamePattern>
+            <maxFileSize>${maxSize}</maxFileSize>
+            <maxHistory>${maxHistory}</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%-5level] [%logger{36}]  - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <!-- ERROR级别的文件打印 -->
+    <appender name="FILE_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 配置过滤 -->
+        <!-- 过滤出ERROR日志 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${logPath}/error.%d{yyyy-MM-dd_HH}.%i</fileNamePattern>
+            <maxFileSize>${maxSize}</maxFileSize>
+            <maxHistory>${maxHistory}</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%-5level] [%logger{36}]  - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="${logLevel}">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE_INFO"/>
+        <appender-ref ref="FILE_ERROR"/>
+    </root>
+</configuration>
