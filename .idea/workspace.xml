@@ -4,10 +4,9 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="593db67e-205d-42ae-96ac-a687c655eddd" name="Default Changelist" comment="update">
+    <list default="true" id="593db67e-205d-42ae-96ac-a687c655eddd" name="Default Changelist" comment="新增logback.xml文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,25 +22,25 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Logback.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1250">
-              <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Logback.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xxd/config/DruidConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="450">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,7 +85,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xxd/websocket/ConnectionHandle.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxd/swagger/DruidConfig.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/xxd/main/BaseTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/xxd/main/UserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxd/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxd/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xxd/mapper/impl/UserMapperImpl.java" />
@@ -106,6 +104,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/Logback.tld" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/Logback.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/xxd/main/UserTest.java" />
       </list>
     </option>
   </component>
@@ -138,10 +137,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-121" />
+    <option name="y" value="23" />
+    <option name="width" value="1200" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -272,7 +271,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558515479716" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558572578245" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -288,7 +287,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.getUserAll">
+  <component name="RunManager" selected="JUnit.UserTest.test">
     <configuration name="UserTest.getUserAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="xm" />
       <extension name="coverage">
@@ -300,6 +299,22 @@
       <option name="PACKAGE_NAME" value="com.xxd.main" />
       <option name="MAIN_CLASS_NAME" value="com.xxd.main.UserTest" />
       <option name="METHOD_NAME" value="getUserAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="xm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xxd.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.xxd.main" />
+      <option name="MAIN_CLASS_NAME" value="com.xxd.main.UserTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -374,6 +389,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.test" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.UserTest.getUserAll" />
         <item itemvalue="Spring Boot.Application" />
@@ -423,13 +439,17 @@
       <option name="project" value="LOCAL" />
       <updated>1558507995082</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新增logback.xml文件">
+      <created>1558515503952</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558515503952</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_getUserAll - 2019.05.21 at 09h 53m 01s.xml">
-      <configuration name="UserTest.getUserAll" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserTest_getUserAll - 2019.05.21 at 09h 54m 06s.xml">
       <configuration name="UserTest.getUserAll" configurationId="JUnit" />
     </history-entry>
@@ -454,9 +474,15 @@
     <history-entry file="UserTest_getUserAll - 2019.05.21 at 11h 41m 02s.xml">
       <configuration name="UserTest.getUserAll" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserTest_test - 2019.05.22 at 17h 05m 00s.xml">
+      <configuration name="UserTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_test - 2019.05.22 at 17h 06m 39s.xml">
+      <configuration name="UserTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42178000" />
+    <option name="totallyTimeSpent" value="44587000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,9 +495,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20499243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -481,13 +506,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3982512" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960256" weight="0.24642289" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960256" weight="0.45655876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.399841" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290938" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3290938" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35093698" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.49403748" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039744" side_tool="true" weight="0.3290938" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49960256" weight="0.3290938" />
@@ -553,7 +578,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="..." />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="新增logback.xml文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增logback.xml文件" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -678,16 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/xxd/main/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xxd/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -709,16 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/xxd/main/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -747,27 +753,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxd/config/DruidConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="200">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/xxd/main/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/xxd/main/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="204">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Logback.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xxd/config/DruidConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" column="39" lean-forward="true" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+        <state relative-caret-position="450">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
